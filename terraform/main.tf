@@ -8,10 +8,6 @@ terraform {
   }
 }
 
-provider "digitalocean" {
-  token = var.do_token
-}
-
 resource "digitalocean_droplet" "teste-dev" {
   image    = "ubuntu-22-04-x64"
   name     = var.droplet_name
@@ -74,30 +70,4 @@ resource "digitalocean_firewall" "firewall_test" {
   }
 }
 
-data "digitalocean_ssh_key" "ssh_key" {
-  name = var.ssh_key_name
-}
 
-variable "do_token" {
-
-}
-
-variable "droplet_name" {
-  default = "teste-dev"
-}
-
-variable "droplet_region" {
-  default = "nyc1"
-}
-
-variable "droplet_size" {
-  default = "s-1vcpu-2gb"
-}
-
-variable "ssh_key_name" {
-  default = "ssh-teste-dev"
-}
-
-output "droplet_ip" {
-  value = digitalocean_droplet.teste-dev[*].ipv4_address
-}
