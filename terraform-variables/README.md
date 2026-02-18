@@ -4,4 +4,5 @@ https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/fi
 terraform init
 terrafrom apply
 
+terraform apply -var-file=file-values.tfvars
 ```
