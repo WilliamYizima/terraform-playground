@@ -5,4 +5,5 @@ terraform init
 terrafrom apply
 
 terraform apply -var-file=file-values.tfvars
+terraform apply -var="conteudo='testando com aaa flag -var-file'"
 ```
