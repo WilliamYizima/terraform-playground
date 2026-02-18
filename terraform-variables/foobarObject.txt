@@ -1,0 +1,1 @@
+My config Machine: us-east-1, t2.micro, ami-0c55b159cbfafe1f0, 1 and is production? false

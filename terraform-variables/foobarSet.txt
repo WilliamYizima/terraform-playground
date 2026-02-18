@@ -1,0 +1,1 @@
+minhas máquinas: s001-g001,s002-g002,s003-g003

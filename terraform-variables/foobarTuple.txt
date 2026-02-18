@@ -1,0 +1,1 @@
+My tuple: s001-g001, s002-g002, true
